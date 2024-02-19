@@ -1,0 +1,164 @@
+/*背景圖調整設定: 寫background 、非寫background-image +簡易表示法 */
+body{  
+  background:url(https://images.unsplash.com/photo-1495195129352-aeb325a55b65?q=80&w=1776&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center/cover fixed;
+}
+/*頁首*/
+.application {
+  height: 40vh;
+  margin: 0 auto;
+  padding: 90px ;
+  border: 2px solid #AD5A5A ;
+  border-radius: 5px;
+  background-image:url(https://images.unsplash.com/photo-1527904219733-fddc74937915?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  color: #4D0000;
+  font-size: 26px;
+  font-weight:bold;
+  text-align: center;
+}
+/*導欄*/
+ul.redirection {
+  display: flex; 
+  justify-content: space-around;
+  list-style-type:none;
+  margin:  0px 0px 50px 0px ;  
+  padding: 20px 60px ;
+  border:  1px solid #AD5A5A ;
+  border-radius: 5px;
+  background-color:	#613030;
+  font-size:0.8em;
+  opacity: 0.9;
+}
+ul.redirection li{ 
+  margin-left:15px; 
+} 
+ul.redirection a{
+  border-radius: 15px;
+  color:#FFFFFF ;
+  text-align: center;
+  font-weight:bold;
+}
+ul.redirection a:hover{
+  background-color:#D9B3B3;
+  text-decoration: none;
+}
+/*輪播圖*/
+#myCarousel{
+  display: flex;
+  justify-content: center;   
+  width: 80% ; 
+  margin: 50px  auto;
+}
+.carousel-inner{     /*從最大容器 統一調整邊框圓角*/
+  border-radius: 25px;    
+}
+.img-style{
+  height:80vh;
+  opacity: 0.9;
+}
+.carousel-caption {  /* 設定在大的div標籤，而非span行內模式 */
+  margin-bottom:90px;
+  padding: 3px 1px; 
+  border: 1px solid #4D0000; 
+  border-radius: 5px;
+  background-color: #FFFFFF; 
+  opacity: 0.85;
+}
+.caption-style{
+  color: #4D0000;
+  font-weight:900;
+}
+.caption-style div{
+   padding: 5px 0px;
+   font-size: xx-large;
+}
+.caption-style p{
+  font-size: medium;
+}
+/*問題欄*/
+#redirection-style{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content:space-around;   
+  width: 80% ;    
+  margin: 0 auto;
+  padding:10px 30px;
+  border:2px solid #804040;
+  border-radius: 5px;           /*最外層大邊框*/
+  font-weight:bold;
+  text-decoration-color:#804040;
+}
+#redirection-style  a{       /*勿寫div.a:hover{ ;}*/
+  border-radius: 15px;       /*各子題邊框*/
+  color:#804040;
+  text-decoration: underline;
+  line-height: 3;
+}
+a:hover{
+  padding: 10px;
+  background-color:#D9B3B3; 
+}
+/*頁尾*/
+.rights{
+  margin-top: 30px;
+  padding: 10px 0px;
+  background-color:	#613030;
+  color: #FFFFFF;
+  font-size:small;
+  text-align: center;
+  opacity: 0.9;
+}
+@media(max-width:1020px){
+  /*問題欄*/
+  #redirection-style{
+    font-size: 14px;
+  }  
+}
+@media(max-width:760px){ 
+  /*頁首*/
+  .application {
+    padding: 50px ; 
+    font-size: x-large;
+  }
+  /*導欄*/  
+  ul.redirection { 
+    flex-direction: column;
+    align-items: center;
+    height: 15vh;     
+    line-height:2;
+  }
+  ul.redirection a {
+    font-size: xx-small;
+  }
+  /*輪播圖*/          
+  #myCarousel{
+    width: 70vh;
+    height: 70vh;
+  }
+  .img-style{
+    height:70vh;
+    opacity: 0.9;
+  }
+  .carousel-caption {
+    display:block   !important; /*輪播圖字幕: 在小螢幕會預設隱藏*/ /*效果未執行-恐被後面順序code覆蓋(尤其字體)，試加入!important 但少用*/
+  }
+  .carousel-caption {
+    width:70%; 
+    margin: 50px 0px 10px 0px;
+    padding: 0px ;
+  }
+  .caption-style div{
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    font-size: medium; 
+  }
+  .caption-style p{
+    font-size: xx-small ;
+    font-weight:bold; 
+  }
+  /*問題欄*/
+  #redirection-style a{
+    font-size: 10px;
+    letter-spacing:2px;  
+  }  
+}
