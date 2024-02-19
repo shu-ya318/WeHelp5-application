@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+  <head>  
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+      <link rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <!--頁首，標題-->
+    <header >
+      <div class="application">謝淑雅的WeHelp Bootcamp申請書</div>
+    </header>
+    <!--導欄，個別問答-->
+    <nav>
+      <ul class="redirection">
+        <li><a href="#myCarousel">跳轉輪播圖進入回應</a></li>
+        <li><a href="#redirection-style">跳轉問題欄進入回應</a></li>
+      </ul>
+    </nav>
+    <!--本文-->
+    <main>
+      <section>   
+        <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">  <!-- 左右輪播 -->    
+        <div class="carousel-indicators">  <!-- 底下指示器 -->
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+        </div>
+        <div class="carousel-inner">  <!-- 輪播圖們 -->
+          <div class="carousel-item  active  img-style " data-bs-interval="5000" >
+            <a href="q1_self-introduction.html"><img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 " alt="自介"></a>
+            <div class="carousel-caption d-none d-md-block ">
+              <span class="caption-style">
+                <div>Q1自介</div>
+                <p>#公務人員&nbsp;#業務涉及資訊</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item  img-style" data-bs-interval="5000" >
+            <a href="q2_eqffort.html"><img src="https://images.unsplash.com/photo-1479920252409-6e3d8e8d4866?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 img-style" alt="努力+成果"></a>
+            <div class="carousel-caption d-none d-md-block   caption-style">
+              <span class="caption-style">
+                <div>Q2努力成果</div>
+                <p>#線上課程與書籍自學&nbsp;#作品:甜點購物網站、猜數字遊戲</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item img-style" data-bs-interval="5000" >
+            <a href="q3_learning.html"><img src="https://images.unsplash.com/photo-1502465771179-51f3535da42c?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100  " alt="安排學習"></a>
+            <div class="carousel-caption d-none d-md-block">      
+            <span class="caption-style">
+                <div>Q3安排學習</div>
+                <p>#每2月為單位&nbsp;#輸入與輸出並重</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item img-style"  data-bs-interval="5000" >
+            <a href="q4_company.html"><img src="https://images.glints.com/unsafe/1920x0/glints-dashboard.s3.amazonaws.com/company-banner-pic/aaafc36efec9369484ef43c7b3b794aa.png" class="d-block w-100  " alt="目標公司"></a>
+            <div class="carousel-caption d-none d-md-block">
+            <span class="caption-style">
+                <div>Q4目標公司</div>
+                <p>#中大型公司&nbsp;#新興電商:松果購物</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item img-style"  data-bs-interval="5000" >
+            <a href="q5_negativeEmotion.html"><img src="https://images.unsplash.com/photo-1530335875407-47f48e04b0aa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100  " alt="情緒處理"></a>
+            <div class="carousel-caption d-none d-md-block">
+            <span class="caption-style">
+                <div>Q5情緒處理</div>
+                <p>#短期體驗課&nbsp;#能力面及心理面精進</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item img-style"  data-bs-interval="5000" >
+            <a href="q6_coding.html"><img src="https://images.unsplash.com/uploads/141103282695035fa1380/95cdfeef?q=80&w=2030&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100 " alt="技術心得"></a>
+            <div class="carousel-caption d-none d-md-block">
+            <span class="caption-style">
+                <div>Q6技術心得</div>
+                <p>#輪播圖&nbsp;#多方思考及深入整體學習</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item img-style"  data-bs-interval="5000" >
+            <a href="q7_interaction.html"><img src="https://images.unsplash.com/photo-1543269865-cbf427effbad?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="d-block w-100  " alt="人際原則"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <span class="caption-style">
+                <div>Q7人際原則</div>
+                <p>#有效溝通&nbsp;#傾聽、精確表達、對事不對人</p>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item img-style"  data-bs-interval="5000" >
+            <a href="q8_thought.html"><img src="https://i.ibb.co/x2LPsRw/wehelp-2.png" class="d-block w-100  " alt="想說的話"></a>
+            <div class="carousel-caption d-none d-md-block">
+              <span class="caption-style">
+                <div>Q8想說的話</div>
+                <p>#極希望錄取&nbsp;#善用培訓會的優勢及資源</p>
+              </span>
+            </div>
+          </div>    
+        <!-- 切换鈕 /控制項 -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>  <!-- class="carousel-inner"結束-->
+      </section>
+      <section id="redirection-style">
+        <div><a href="q1_self-introduction.html" class="flexitem">【Q1自介】&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;兩百字內的個人簡介</a></div>
+        <div><a href="q2_eqffort.html" class="flexitem" >【Q2努力成果】為了成為軟體工程師做過什麼努力？若有具體作品請分享給我們。</a></div>
+        <div><a href="q3_learning.html" class="flexitem">【Q3安排學習】如果參與這個訓練，會怎麼安排學習時間？</a></div>
+        <div><a href="q4_company.html" class="flexitem">【Q4目標公司】是否有想要加入的公司？為什麼想加入該公司？</a></div>
+        <div><a href="q5_negativeEmotion.html" class="flexitem">【Q5情緒處理】請描述一件產生明顯負面情緒的經歷，如何處理該情緒？</a></div>
+        <div><a href="q6_coding.html" class="flexitem">【Q6技術心得】關於這份申請網頁，分享一個開發時的技術心得。</a></div>
+        <div><a href="q7_interaction.html" class="flexitem">【Q7人際原則】請用簡短兩三句話，描述對你而言最重要的一項人際交往原則。</a></div>
+        <div><a href="q8_thought.html" class="flexitem">【Q8想說的話】其他想要對我們說的事情？</a></div>
+      <section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!--頁尾，版權聲明-->
+    <footer>
+      <div class="rights">Copyright&nbsp;&nbsp;&copy;&nbsp;2024 Shu-ya All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>
