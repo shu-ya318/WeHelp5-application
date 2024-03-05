@@ -55,6 +55,18 @@ ul.redirection a:hover{
   height:80vh;
   opacity: 0.9;
 }
+.carousel-indicators [data-bs-target]{  /* bootstrap5某些元件 選擇器要寫很精準 才顯示效果 (否則內建樣式會覆蓋自訂 CSS 樣式)*/
+  /*寬&高要相等 + 圓邊>50% = 圓型圖案 */
+  width: 20px;     
+  height: 20px;
+  margin: 5px;
+  border-radius: 100%;     
+  box-sizing: border-box;  
+  border: 1px solid white; /*未active時也設邊框css，否則未播放的輪播圖指示器相對地無法顯示*/
+}
+.carousel-indicators .active[data-bs-target] {
+  border: 3px solid silver;
+}
 .carousel-caption {  /* 設定在大的div標籤，而非span行內模式 */
   margin-bottom:90px;
   padding: 3px 1px; 
