@@ -55,8 +55,8 @@ ul.redirection a:hover{
   height:80vh;
   opacity: 0.9;
 }
-.carousel-indicators [data-bs-target]{  /* bootstrap5某些元件 選擇器要寫很精準 才顯示效果 (否則內建樣式會覆蓋自訂 CSS 樣式)*/
-  /*寬&高要相等 + 圓邊>50% = 圓型圖案 */
+.carousel-indicators [data-bs-target]{  /*bootstrap5某些元件: 選擇器寫很精準，才顯示效果 (否則內建樣式會覆蓋自訂 CSS 樣式)*/
+  /*寬&高相等 + 圓邊>50% = 圓型圖案 */
   width: 20px;     
   height: 20px;
   margin: 5px;
